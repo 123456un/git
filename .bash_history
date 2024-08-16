@@ -64,3 +64,73 @@ clear
 git log
 git revert 44e02b8
 git log
+clear
+ls
+git branch
+git checkout prod
+ls
+echo "reset code added" >f1
+ls
+git add .
+git commit -m "conflict commit"
+clear
+git branch
+git checkout master
+ls
+git merge prod
+ls
+cat f1
+clear
+ls
+rm f1
+rm f2
+clear
+ls
+touch amazon
+ls
+vi amazon 
+git add .
+git stash
+clear
+ls
+git stash list
+touch flikart
+ls
+rm f1
+rm f2
+ls
+echo "flikart code" >flikart 
+ls
+git add .
+git reset
+git reset flikart
+ls
+clear
+ls
+git reset
+git reset --hard flikart
+git reset --hard
+ls
+git merge prod
+git reset --hard
+clear
+ls
+git reset
+ls
+clear
+rm f1 f2
+ls
+git stash list
+git stash apply stash@{0}
+clear
+ls
+rm -f amazon flikart 
+ls
+clear
+git log
+clear
+git log
+clear
+ls
+clear
+apt install docker.io -y
